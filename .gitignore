@@ -1,0 +1,4 @@
+/.ddev/
+/.vscode
+/db
+/config.php
