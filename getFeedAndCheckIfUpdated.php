@@ -36,7 +36,7 @@ foreach ($feeds as $feed) {
     // Check if feed is empty
     if (count($entries) === 0) {
       if ($alarm == 0) {
-        sendTelegram("Folgender Feed hat keine items: " . $feed);
+        sendTelegram("Folgender Feed hat keine items: " . $feedurl);
         $db->exec("UPDATE feeds SET alarm=1 WHERE id='" . $id . "'");
       }
     } else {
